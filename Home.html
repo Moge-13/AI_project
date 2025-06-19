@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Emergency Response - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <header>
+    <h1 class="h1">Welcome to AI Emergency Response</h1>
+    <nav class="home-nav">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('report_incident') }}">Report An Incident</a>
+    </nav>
+  </header>
+  
+  <main>
+    <main>
+        <section class="hero">
+            <h1 >Your Safety Is Our Priority</h1>
+            <p>Use our AI-powered system to quickly report incidents and get real-time assistance.</p>
+            <a class="button" href="{{ url_for('report_incident') }}">Report Now</a>
+        </section>
+    </main>
+    
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI Emergency Response</p>
+  </footer>
+</body>
+</html
