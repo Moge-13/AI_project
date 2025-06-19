@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    
+  }
+  
+  header {
+    background: #f04141;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background: url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+    padding: 4rem;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  
+  .incident-form {
+    background: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 50%;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .incident-form label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: bold;
+  }
+  
+  .incident-form input,
+  .incident-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #141212;
+  }
+  
+  .incident-form button {
+    background: #e20f0f;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 50%;
+    top: 30%;
+    margin-top: 30px;
+  }
+  
+  .incident-form button:hover {
+    background: #e47777;
+  }
+  .desc{
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  .location{
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  .name{
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  
+  main {
+    padding: 1rem;
+    text-align: center;
+    
+  }
+  
+  footer {
+    background: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Apply the background image to main or body */
+/* Apply the background image to main */
+/* Main section with background image */
+/* Full-page container with centered content */
+/* Full-page layout */
+/* Full-page layout */
+/* Full-page layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main section with background */
+main {
+  height: 100vh;
+  background: url('/static/images/Emergency.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+/* Centered container for text and button */
+.hero {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  position: absolute;
+  top:300px;
+  
+  
+}
+
+/* Heading style */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+  color: #ff4d4d; /* Red color for heading */
+}
+
+/* Subheading style */
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Report Button */
+.button {
+  display: inline-block;
+  background-color: #d85757;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #f11212;
+  cursor: pointer;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/static/images/Emergency.png'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+/* Incident form container */
+.incident-form {
+    background-color: rgba(87, 85, 85, 0.85); /* Transparent white */
+    padding: 40px 60px;
+    border-radius: 12px;
+    width: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft 3D shadow */
+    font-size: 18px; /* Bigger font */
+}
+
+/* Style for form elements */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+/* Button styles */
+.button {
+    background-color: #f01212;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 30%;
+    margin-top: 20px;
+    font-size: 25px;
+   
+}
+
+.button:hover {
+    background-color: #ec4d4d;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3f51b5;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+}
+
+.h1{
+  color: white;
+  font-size: 45px;
+}
+.hero h1{
+  color: red;
+  font-size: 55px;
+  font-weight:bold;
+}
+.hero p{
+  color: white;
+  font-size: 22px;
+}
+.incident-form{
+  font-size: 25px;
+  color: rgb(204, 186, 186);
+  
+}
+.Report{
+  font-size: 45px;
+}
+.come{
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  position: absolute;
+  top:250px;
+  font-size: 20px;
+}
+.come h1{
+  color: red;
+  font-size: 45px;
+}
+.recent{
+  font-size: 25px;
+  color: white;
+}
