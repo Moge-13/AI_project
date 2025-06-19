@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Emergency Response - Report Incident</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Report an Incident</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('report_incident') }}">Report</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="{{ url_for('report_incident') }}" method="POST" class="incident-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="incident_type">Incident Type:</label>
+            <select id="incident_type" name="incident_type" required>
+                <option value="">Select Incident Type</option>
+                <option value="fire">Fire</option>
+                <option value="accident">Accident</option>
+                <option value="medical">Medical Emergency</option>
+                <option value="theft">Theft</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="description">Description:</label>
+            <textarea class="desc" id="description" name="description" required></textarea>
+
+            <button type="submit" class="button">Submit Report</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Emergency Response</p>
+    </footer>
+</body>
+</html>
