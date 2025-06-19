@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Emergency Response - Confirmation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Report Confirmation</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('report_incident') }}">Report Again</a>
+        </nav>
+    </header>
+
+    <main >
+        <section class="come">
+        {% if report %}
+            <h1>Thank you, {{ report.name }}!</h1>  
+            <p class="recent"><strong>Incident:</strong> {{ report.incident_type }}</p>
+            <p class="recent"><strong>Location:</strong> {{ report.location }}</p>
+            <p class="recent"><strong>Description:</strong> {{ report.description }}</p>
+            <p class="recent"><strong>AI Response:</strong> {{ report.response }}</p>
+        {% else %}
+            <p>No recent report found. Please submit a new incident report.</p>
+        {% endif %}
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Emergency Response</p>
+    </footer>
+</body>
+</html>
